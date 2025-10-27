@@ -91,13 +91,15 @@ const palettes = {
     ...defaultPalette,
 
     // Primary palette
-    greenDark: "#073129",
-    greenLight: "#a4d4b4",
     green: "#abb818",
+    greenDark: "#073129",
+    greenDarkMid: "#328954",
+    greenLight: "#a4d4b4",
     pink: "#ee8dc1",
     yellow: "#ffbc92",
     pinkDark: "#d62e6c",
     purpleLight: "#dac7df",
+    purple: "#5b1c62",
     purpleDark: "#3b1c32",
     purpleDarker: "#2C0A25",
 
@@ -280,23 +282,20 @@ const brisbaneDark = {
 
 const brisbaneLight = {
   ...defaultMapping(palettes.brisbane),
-  foreground: palettes.brisbane.greenDark,
+  foreground: palettes.brisbane.purple,
   editorBackground: palettes.brisbane.gray100,
   panelBackground: palettes.brisbane.gray90,
-  chromeBackground: palettes.brisbane.purpleLight,
-  primary: palettes.brisbane.greenDark,
-  primaryTransparent: palettes.brisbane.greenDark + "20",
-  selection: palettes.brisbane.greenLight + "50",
+  chromeBackground: palettes.brisbane.gray90,
+  selection: palettes.brisbane.yellow + "AA",
   keyword: palettes.brisbane.pinkDark,
-  string: palettes.brisbane.purpleDark,
-  number: palettes.brisbane.pinkDark,
-  type: palettes.brisbane.green,
-  comment: palettes.brisbane.gray50,
+  string: palettes.brisbane.purpleDarker,
+  number: palettes.brisbane.yellowDark,
+  type: palettes.brisbane.greenDarkMid,
+  comment: palettes.brisbane.pinkDark + "AA",
   operator: palettes.brisbane.pinkDark,
-  bracket: palettes.brisbane.pinkDark,
-  lineNumber: palettes.brisbane.gray50,
-  lineNumberActive: palettes.brisbane.greenDark,
-  selectedLineHighlight: palettes.brisbane.greenLight + "30",
+  bracketColor1: palettes.brisbane.greenDarkMid,
+  bracketColor2: palettes.brisbane.blueDark,
+  bracketColor3: palettes.brisbane.greenDark,
 };
 
 // ============================================
