@@ -1,0 +1,22 @@
+{
+  "name": "claution-color-theme",
+  "displayName": "Claution Color Theme",
+  "description": "A custom color theme for VSCode",
+  "version": "0.0.1",
+  "publisher": "your-publisher-name",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Claution Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/claution-dark-theme.json"
+      }
+    ]
+  }
+}
