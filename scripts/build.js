@@ -5,12 +5,15 @@ const themes = require('../src/theme-builder.js');
 
 // Build all themes
 Object.entries(themes).forEach(([themeName, variants]) => {
-  const darkPath = path.join(__dirname, `../themes/${themeName}-dark-theme.json`);
-  const lightPath = path.join(__dirname, `../themes/${themeName}-light-theme.json`);
+  // Convert camelCase to kebab-case for filenames
+  const fileName = themeName.replace(/([A-Z])/g, '-$1').toLowerCase();
+
+  const darkPath = path.join(__dirname, `../themes/condo-${fileName}-dark.json`);
+  const lightPath = path.join(__dirname, `../themes/condo-${fileName}-light.json`);
 
   fs.writeFileSync(darkPath, JSON.stringify(variants.dark, null, 2));
   fs.writeFileSync(lightPath, JSON.stringify(variants.light, null, 2));
 
-  console.log(`✓ ${themeName} dark compiled to themes/${themeName}-dark-theme.json`);
-  console.log(`✓ ${themeName} light compiled to themes/${themeName}-light-theme.json`);
+  console.log(`✓ ${themeName} dark compiled to themes/condo-${fileName}-dark.json`);
+  console.log(`✓ ${themeName} light compiled to themes/condo-${fileName}-light.json`);
 });

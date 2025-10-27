@@ -1,4 +1,2 @@
 node_modules
 *.vsix
-darcula-reference.json
-themes/*.json
