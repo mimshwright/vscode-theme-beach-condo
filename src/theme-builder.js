@@ -28,34 +28,6 @@ const defaultPalette = {
   gray0: "#15120e",
 };
 
-const defaultMapping = (palette) => ({
-  foreground: palette.green,
-  editorBackground: palette.gray10,
-  panelBackground: palette.gray10,
-  chromeBackground: palette.gray10,
-  primary: palette.purple,
-  primaryTransparent: palette.purple + "40",
-  selection: palette.green + "30",
-  keyword: palette.red,
-  string: palette.gray100,
-  number: palette.pink,
-  type: palette.blue,
-  comment: palette.redDark,
-  operator: palette.pink,
-  bracket: palette.pink,
-  lineNumber: palette.pink,
-  lineNumberActive: palette.green,
-  lineHighlight: "#ffffff08",
-  selectedLineHighlight: "#ffffff12",
-  border: palette.pink,
-  bracketColor1: palette.pink,
-  bracketColor2: palette.blue,
-  bracketColor3: palette.green,
-  bracketColor4: palette.red,
-  bracketColor5: palette.purple,
-  bracketColor6: palette.pink,
-});
-
 const palettes = {
   belmopan: {
     ...defaultPalette,
@@ -119,22 +91,53 @@ const palettes = {
     ...defaultPalette,
 
     // Primary palette
-    tealDark: "#073129",
-    tealLight: "#a4d4b4",
+    greenDark: "#073129",
+    greenLight: "#a4d4b4",
     green: "#abb818",
-    pink: "#ffbc92",
+    pink: "#ee8dc1",
+    yellow: "#ffbc92",
     pinkDark: "#d62e6c",
     purpleLight: "#dac7df",
     purpleDark: "#3b1c32",
+    purpleDarker: "#2C0A25",
 
     gray100: "#f3e9ee",
     gray90: "#f1d7ba",
+    gray10: "#073620",
   },
 };
 
 // ============================================
 // SEMANTIC MAPPINGS
 // ============================================
+
+const defaultMapping = (palette) => ({
+  foreground: palette.green,
+  editorBackground: palette.gray10,
+  panelBackground: palette.gray10,
+  chromeBackground: palette.gray10,
+  primary: palette.purple,
+  primaryTransparent: palette.purple + "40",
+  selection: palette.green + "30",
+  keyword: palette.red,
+  string: palette.gray100,
+  number: palette.pink,
+  type: palette.blue,
+  comment: palette.redDark,
+  operator: palette.pink,
+  bracket: palette.pink,
+  lineNumber: palette.pink,
+  lineNumberActive: palette.green,
+  lineHighlight: "#ffffff08",
+  selectedLineHighlight: "#ffffff12",
+  border: palette.pink,
+  bracketColor1: palette.pink,
+  bracketColor2: palette.blue,
+  bracketColor3: palette.green,
+  bracketColor4: palette.red,
+  bracketColor5: palette.purple,
+  bracketColor6: palette.pink,
+});
 
 // Belmopan semantic mappings
 const belmopanDark = {
@@ -260,34 +263,30 @@ const barcelonaBoldLight = {
 // Brisbane semantic mappings
 const brisbaneDark = {
   ...defaultMapping(palettes.brisbane),
-  foreground: palettes.brisbane.tealLight,
+  foreground: palettes.brisbane.yellow,
   editorBackground: palettes.brisbane.purpleDark,
-  panelBackground: palettes.brisbane.gray10,
+  panelBackground: palettes.brisbane.purpleDarker,
   chromeBackground: palettes.brisbane.gray0,
-  primary: palettes.brisbane.tealLight,
-  primaryTransparent: palettes.brisbane.tealLight + "40",
-  selection: palettes.brisbane.tealDark + "60",
+  primary: palettes.brisbane.greenLight,
+  primaryTransparent: palettes.brisbane.greenLight + "40",
+  selection: palettes.brisbane.greenDark + "AA",
   keyword: palettes.brisbane.pinkDark,
-  string: palettes.brisbane.gray90,
-  number: palettes.brisbane.pink,
   type: palettes.brisbane.green,
-  comment: palettes.brisbane.gray60,
-  operator: palettes.brisbane.pink,
-  bracket: palettes.brisbane.pink,
-  lineNumber: palettes.brisbane.purpleLight,
-  lineNumberActive: palettes.brisbane.tealLight,
-  selectedLineHighlight: palettes.brisbane.tealDark + "40",
+  comment: palettes.brisbane.yellow + "66",
+  operator: palettes.brisbane.greenLight,
+  lineNumberActive: palettes.brisbane.greenLight,
+  bracketColor1: palettes.brisbane.greenLight,
 };
 
 const brisbaneLight = {
   ...defaultMapping(palettes.brisbane),
-  foreground: palettes.brisbane.tealDark,
+  foreground: palettes.brisbane.greenDark,
   editorBackground: palettes.brisbane.gray100,
   panelBackground: palettes.brisbane.gray90,
   chromeBackground: palettes.brisbane.purpleLight,
-  primary: palettes.brisbane.tealDark,
-  primaryTransparent: palettes.brisbane.tealDark + "20",
-  selection: palettes.brisbane.tealLight + "50",
+  primary: palettes.brisbane.greenDark,
+  primaryTransparent: palettes.brisbane.greenDark + "20",
+  selection: palettes.brisbane.greenLight + "50",
   keyword: palettes.brisbane.pinkDark,
   string: palettes.brisbane.purpleDark,
   number: palettes.brisbane.pinkDark,
@@ -296,8 +295,8 @@ const brisbaneLight = {
   operator: palettes.brisbane.pinkDark,
   bracket: palettes.brisbane.pinkDark,
   lineNumber: palettes.brisbane.gray50,
-  lineNumberActive: palettes.brisbane.tealDark,
-  selectedLineHighlight: palettes.brisbane.tealLight + "30",
+  lineNumberActive: palettes.brisbane.greenDark,
+  selectedLineHighlight: palettes.brisbane.greenLight + "30",
 };
 
 // ============================================

@@ -11,7 +11,7 @@
     "titleBar.activeBackground": "#dac7df",
     "titleBar.inactiveBackground": "#dac7df",
     "titleBar.activeForeground": "#073129",
-    "sideBar.border": "#ffbc92",
+    "sideBar.border": "#ee8dc1",
     "sideBar.background": "#f1d7ba",
     "statusBar.foreground": "#073129",
     "statusBar.background": "#dac7df",
@@ -24,12 +24,12 @@
     "badge.background": "#073129",
     "activityBar.background": "#dac7df",
     "activityBarBadge.background": "#073129",
-    "editorBracketHighlight.foreground1": "#ffbc92",
+    "editorBracketHighlight.foreground1": "#ee8dc1",
     "editorBracketHighlight.foreground2": "#95dbed",
     "editorBracketHighlight.foreground3": "#abb818",
     "editorBracketHighlight.foreground4": "#ed561a",
     "editorBracketHighlight.foreground5": "#883556",
-    "editorBracketHighlight.foreground6": "#ffbc92"
+    "editorBracketHighlight.foreground6": "#ee8dc1"
   },
   "tokenColors": [
     {
