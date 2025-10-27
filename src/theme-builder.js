@@ -8,6 +8,8 @@ const defaultPalette = {
   pink: "#ffc3c3",
   yellow: "#ffb454",
   yellowDark: "#d99444",
+  blue: "#95dbed",
+  blueDark: "#6ab8d1",
   purple: "#883556",
   purpleDark: "#1E0914",
   green: "#0f8142",
@@ -21,9 +23,38 @@ const defaultPalette = {
   gray60: "#999999",
   gray50: "#666666",
   gray30: "#4a4540",
-  gray10: "#2a2520",
-  gray0: "#1a1816",
+  gray20: "#221e1a",
+  gray10: "#1a1816",
+  gray0: "#15120e",
 };
+
+const defaultMapping = (palette) => ({
+  foreground: palette.green,
+  editorBackground: palette.gray10,
+  panelBackground: palette.gray10,
+  chromeBackground: palette.gray10,
+  primary: palette.purple,
+  primaryTransparent: palette.purple + "40",
+  selection: palette.green + "30",
+  keyword: palette.red,
+  string: palette.gray100,
+  number: palette.pink,
+  type: palette.blue,
+  comment: palette.redDark,
+  operator: palette.pink,
+  bracket: palette.pink,
+  lineNumber: palette.pink,
+  lineNumberActive: palette.green,
+  lineHighlight: "#ffffff08",
+  selectedLineHighlight: "#ffffff12",
+  border: palette.pink,
+  bracketColor1: palette.pink,
+  bracketColor2: palette.blue,
+  bracketColor3: palette.green,
+  bracketColor4: palette.red,
+  bracketColor5: palette.purple,
+  bracketColor6: palette.pink,
+});
 
 const palettes = {
   dotonbori: {
@@ -36,6 +67,8 @@ const palettes = {
     pinkDark: "#d16ba6",
     green: "#38e284",
     greenDark: "#2a8c5a",
+
+    gray10: "#2f2316",
   },
 
   telavision: {
@@ -67,8 +100,6 @@ const palettes = {
 
     // Primary palette
     pink: "#f8c9e3",
-    blue: "#95dbed",
-    blueDark: "#6ab8d1",
     yellow: "#f7af4b",
     yellowDark: "#d99444",
 
@@ -83,6 +114,22 @@ const palettes = {
     gray10: "#073620",
     gray0: "#041f14",
   },
+
+  panhandle: {
+    ...defaultPalette,
+
+    // Primary palette
+    tealDark: "#073129",
+    tealLight: "#a4d4b4",
+    green: "#abb818",
+    pink: "#ffbc92",
+    pinkDark: "#d62e6c",
+    purpleLight: "#dac7df",
+    purpleDark: "#3b1c32",
+
+    gray100: "#f3e9ee",
+    gray90: "#f1d7ba",
+  },
 };
 
 // ============================================
@@ -91,13 +138,12 @@ const palettes = {
 
 // Dotonbori semantic mappings
 const dotonboriDark = {
+  ...defaultMapping(palettes.dotonbori),
   foreground: palettes.dotonbori.green,
-  editorBackground: palettes.dotonbori.gray10,
-  panelBackground: palettes.dotonbori.gray10,
-  chromeBackground: palettes.dotonbori.gray10,
+  editorBackground: palettes.dotonbori.gray20,
   primary: palettes.dotonbori.purple,
   primaryTransparent: palettes.dotonbori.purple + "40",
-  selection: palettes.dotonbori.green + "30",
+  selection: palettes.dotonbori.yellowDark + "30",
   keyword: palettes.dotonbori.red,
   string: palettes.dotonbori.gray100,
   number: palettes.dotonbori.pink,
@@ -105,19 +151,13 @@ const dotonboriDark = {
   comment: palettes.dotonbori.redDark,
   operator: palettes.dotonbori.pink,
   bracket: palettes.dotonbori.pink,
-  bracketColor1: palettes.dotonbori.pink,
-  bracketColor2: palettes.dotonbori.blue,
-  bracketColor3: palettes.dotonbori.green,
-  bracketColor4: palettes.dotonbori.red,
-  bracketColor5: palettes.dotonbori.purple,
-  bracketColor6: palettes.dotonbori.pink,
   lineNumber: palettes.dotonbori.pink,
   lineNumberActive: palettes.dotonbori.green,
-  lineHighlight: "#ffffff08",
   border: palettes.dotonbori.pink,
 };
 
 const dotonboriLight = {
+  ...defaultMapping(palettes.dotonbori),
   foreground: palettes.dotonbori.gray10,
   editorBackground: palettes.dotonbori.gray95,
   panelBackground: palettes.dotonbori.gray100,
@@ -132,20 +172,13 @@ const dotonboriLight = {
   comment: palettes.dotonbori.pink,
   operator: palettes.dotonbori.greenDark,
   bracket: palettes.dotonbori.pink,
-  bracketColor1: palettes.dotonbori.pinkDark,
-  bracketColor2: palettes.dotonbori.blueDark,
-  bracketColor3: palettes.dotonbori.greenDark,
-  bracketColor4: palettes.dotonbori.redDark,
-  bracketColor5: palettes.dotonbori.purple,
-  bracketColor6: palettes.dotonbori.pinkDark,
   lineNumber: palettes.dotonbori.pink,
   lineNumberActive: palettes.dotonbori.green,
-  lineHighlight: "#00000008",
-  border: "#00000015",
 };
 
 // TelAvision semantic mappings
 const telavisionDark = {
+  ...defaultMapping(palettes.telavision),
   foreground: palettes.telavision.blue,
   editorBackground: palettes.telavision.gray5,
   panelBackground: palettes.telavision.gray10,
@@ -160,19 +193,12 @@ const telavisionDark = {
   comment: palettes.telavision.gray50,
   operator: palettes.telavision.gray60,
   bracket: palettes.telavision.pink,
-  bracketColor1: palettes.telavision.pink,
-  bracketColor2: palettes.telavision.blue,
-  bracketColor3: palettes.telavision.yellow,
-  bracketColor4: palettes.telavision.red,
-  bracketColor5: palettes.telavision.teal,
-  bracketColor6: palettes.telavision.pink,
   lineNumber: palettes.telavision.gray50,
   lineNumberActive: palettes.telavision.blue,
-  lineHighlight: "#ffffff08",
-  border: "#ffffff15",
 };
 
 const telavisionLight = {
+  ...defaultMapping(palettes.telavision),
   foreground: palettes.telavision.green,
   editorBackground: palettes.telavision.gray100,
   panelBackground: palettes.telavision.gray95,
@@ -187,20 +213,13 @@ const telavisionLight = {
   comment: palettes.telavision.gray40,
   operator: palettes.telavision.gray60,
   bracket: palettes.telavision.redDark,
-  bracketColor1: palettes.telavision.redDark,
-  bracketColor2: palettes.telavision.blueDark,
-  bracketColor3: palettes.telavision.yellowDark,
-  bracketColor4: palettes.telavision.redDark,
-  bracketColor5: palettes.telavision.green,
-  bracketColor6: palettes.telavision.redDark,
   lineNumber: palettes.telavision.gray40,
   lineNumberActive: palettes.telavision.green,
-  lineHighlight: "#00000008",
-  border: "#00000015",
 };
 
 // TelAvisionBold semantic mappings
 const telavisionboldDark = {
+  ...defaultMapping(palettes.telavisionbold),
   foreground: palettes.telavisionbold.green,
   editorBackground: palettes.telavisionbold.gray30,
   panelBackground: palettes.telavisionbold.gray10,
@@ -215,19 +234,11 @@ const telavisionboldDark = {
   comment: palettes.telavisionbold.gray50,
   operator: palettes.telavisionbold.gray60,
   bracket: palettes.telavisionbold.pink,
-  bracketColor1: palettes.telavisionbold.pink,
-  bracketColor2: palettes.telavisionbold.blue,
-  bracketColor3: palettes.telavisionbold.yellow,
-  bracketColor4: palettes.telavisionbold.red,
-  bracketColor5: palettes.telavisionbold.green,
-  bracketColor6: palettes.telavisionbold.pink,
-  lineNumber: palettes.telavisionbold.gray50,
   lineNumberActive: palettes.telavisionbold.green,
-  lineHighlight: "#ffffff08",
-  border: "#ffffff15",
 };
 
 const telavisionboldLight = {
+  ...defaultMapping(palettes.telavisionbold),
   foreground: palettes.telavisionbold.greenLight,
   editorBackground: palettes.telavisionbold.gray100,
   panelBackground: palettes.telavisionbold.gray95,
@@ -242,16 +253,51 @@ const telavisionboldLight = {
   comment: palettes.telavisionbold.gray40,
   operator: palettes.telavisionbold.gray60,
   bracket: palettes.telavisionbold.redDark,
-  bracketColor1: palettes.telavisionbold.redDark,
-  bracketColor2: palettes.telavisionbold.blueDark,
-  bracketColor3: palettes.telavisionbold.yellowDark,
-  bracketColor4: palettes.telavisionbold.redDark,
-  bracketColor5: palettes.telavisionbold.greenLight,
-  bracketColor6: palettes.telavisionbold.redDark,
   lineNumber: palettes.telavisionbold.gray40,
   lineNumberActive: palettes.telavisionbold.greenLight,
-  lineHighlight: "#00000008",
-  border: "#00000015",
+};
+
+// Panhandle semantic mappings
+const panhandleDark = {
+  ...defaultMapping(palettes.panhandle),
+  foreground: palettes.panhandle.tealLight,
+  editorBackground: palettes.panhandle.purpleDark,
+  panelBackground: palettes.panhandle.gray10,
+  chromeBackground: palettes.panhandle.gray0,
+  primary: palettes.panhandle.tealLight,
+  primaryTransparent: palettes.panhandle.tealLight + "40",
+  selection: palettes.panhandle.tealDark + "60",
+  keyword: palettes.panhandle.pinkDark,
+  string: palettes.panhandle.gray90,
+  number: palettes.panhandle.pink,
+  type: palettes.panhandle.green,
+  comment: palettes.panhandle.gray60,
+  operator: palettes.panhandle.pink,
+  bracket: palettes.panhandle.pink,
+  lineNumber: palettes.panhandle.purpleLight,
+  lineNumberActive: palettes.panhandle.tealLight,
+  selectedLineHighlight: palettes.panhandle.tealDark + "40",
+};
+
+const panhandleLight = {
+  ...defaultMapping(palettes.panhandle),
+  foreground: palettes.panhandle.tealDark,
+  editorBackground: palettes.panhandle.gray100,
+  panelBackground: palettes.panhandle.gray90,
+  chromeBackground: palettes.panhandle.purpleLight,
+  primary: palettes.panhandle.tealDark,
+  primaryTransparent: palettes.panhandle.tealDark + "20",
+  selection: palettes.panhandle.tealLight + "50",
+  keyword: palettes.panhandle.pinkDark,
+  string: palettes.panhandle.purpleDark,
+  number: palettes.panhandle.pinkDark,
+  type: palettes.panhandle.green,
+  comment: palettes.panhandle.gray50,
+  operator: palettes.panhandle.pinkDark,
+  bracket: palettes.panhandle.pinkDark,
+  lineNumber: palettes.panhandle.gray50,
+  lineNumberActive: palettes.panhandle.tealDark,
+  selectedLineHighlight: palettes.panhandle.tealLight + "30",
 };
 
 // ============================================
@@ -264,7 +310,7 @@ function buildTheme(type, semantic) {
       "editor.background": semantic.editorBackground,
       "editor.foreground": semantic.foreground,
       "editor.selectionBackground": semantic.selection,
-      "editor.lineHighlightBackground": semantic.lineHighlight,
+      "editor.lineHighlightBackground": semantic.selectedLineHighlight,
       "editorLineNumber.foreground": semantic.lineNumber,
       "editorLineNumber.activeForeground": semantic.lineNumberActive,
       "editorGutter.background": semantic.editorBackground,
@@ -802,5 +848,9 @@ module.exports = {
   telavisionbold: {
     dark: buildTheme("dark", telavisionboldDark),
     light: buildTheme("light", telavisionboldLight),
+  },
+  panhandle: {
+    dark: buildTheme("dark", panhandleDark),
+    light: buildTheme("light", panhandleLight),
   },
 };

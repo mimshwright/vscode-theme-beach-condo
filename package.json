@@ -1,9 +1,9 @@
 {
-  "name": "claution-color-theme",
-  "displayName": "Claution Color Theme",
-  "description": "A custom color theme for VSCode",
+  "name": "vscode-theme-condo",
+  "displayName": "Condo Color Themes",
+  "description": "A set of custom color themes for VSCode",
   "version": "0.0.1",
-  "publisher": "your-publisher-name",
+  "publisher": "mimshwright",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -45,6 +45,16 @@
         "label": "TelAvisionBold Light",
         "uiTheme": "vs",
         "path": "./themes/telavisionbold-light-theme.json"
+      },
+      {
+        "label": "Panhandle Light",
+        "uiTheme": "vs",
+        "path": "./themes/panhandle-light-theme.json"
+      },
+      {
+        "label": "Panhandle Dark",
+        "uiTheme": "vs",
+        "path": "./themes/panhandle-dark-theme.json"
       }
     ]
   },
