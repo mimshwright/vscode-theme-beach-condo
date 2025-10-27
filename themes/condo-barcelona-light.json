@@ -2,18 +2,18 @@
   "type": "light",
   "colors": {
     "editor.background": "#fdfefe",
-    "editor.foreground": "#007775",
+    "editor.foreground": "#89D264",
     "editor.selectionBackground": "#97cde130",
     "editor.lineHighlightBackground": "#ffffff12",
     "editorLineNumber.foreground": "#999999",
-    "editorLineNumber.activeForeground": "#007775",
+    "editorLineNumber.activeForeground": "#89D264",
     "editorGutter.background": "#fdfefe",
     "titleBar.activeBackground": "#eef5f1",
     "titleBar.inactiveBackground": "#eef5f1",
-    "titleBar.activeForeground": "#007775",
+    "titleBar.activeForeground": "#89D264",
     "sideBar.border": "#ffc3c3",
     "sideBar.background": "#f5fbf7",
-    "statusBar.foreground": "#007775",
+    "statusBar.foreground": "#89D264",
     "statusBar.background": "#eef5f1",
     "tab.activeBackground": "#eef5f1",
     "tab.inactiveBackground": "#f5fbf7",
@@ -26,7 +26,7 @@
     "activityBarBadge.background": "#005a59",
     "editorBracketHighlight.foreground1": "#ffc3c3",
     "editorBracketHighlight.foreground2": "#97cde1",
-    "editorBracketHighlight.foreground3": "#007775",
+    "editorBracketHighlight.foreground3": "#89D264",
     "editorBracketHighlight.foreground4": "#fe6358",
     "editorBracketHighlight.foreground5": "#883556",
     "editorBracketHighlight.foreground6": "#ffc3c3"
@@ -85,7 +85,7 @@
       "name": "String Interpolation Body",
       "scope": "expression.string,meta.template.expression",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -134,14 +134,14 @@
       "name": "Class constructor",
       "scope": "class.instance.constructor,new.expr entity.name.type",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
       "name": "Function",
       "scope": "support.function, entity.name.function",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -155,14 +155,14 @@
       "name": "Function Argument",
       "scope": "variable.parameter, operator.rest.parameters",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
       "name": "Variable, Property",
       "scope": "variable.property,variable.other.property,variable.other.object.property,variable.object.property,support.variable.property",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -191,14 +191,14 @@
       "name": "Tag attribute",
       "scope": "entity.other.attribute-name",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
       "name": "Object Keys",
       "scope": "meta.object-literal.key",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -226,7 +226,7 @@
       "name": "TypeScript Method Declaration",
       "scope": "function-declaration,method-declaration,method-overload-declaration,type-fn-type-parameters",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -247,14 +247,14 @@
       "name": "Import-Export-All (*) Keyword",
       "scope": "constant.language.import-export-all",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
       "name": "Object Key Seperator",
       "scope": "objectliteral.key.separator, punctuation.separator.key-value",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -268,21 +268,21 @@
       "name": "Typescript Namespace",
       "scope": "ts.meta.entity.name.namespace,tsx.meta.entity.name.namespace",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
       "name": "Regex Character-class",
       "scope": "regex.character-class",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
       "name": "Class Name",
       "scope": "entity.name.type.class",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -296,7 +296,7 @@
       "name": "Documentation Entity",
       "scope": "entity.name.type.instance.jsdoc",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -310,14 +310,14 @@
       "name": "YAML string value",
       "scope": "yaml.string.out",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
       "name": "Ignored (Exceptions Rules)",
       "scope": "block.support.module,block.support.type.module,block.support.function.variable",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -331,21 +331,21 @@
       "name": "Regex Group/Set",
       "scope": "punctuation.definition.group.regexp,punctuation.definition.character-class.regexp",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
       "name": "Regex Character Class",
       "scope": "constant.other.character-class.regexp, constant.character.escape.ts",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
       "name": "Regex Or Operator",
       "scope": "expr.regex.or.operator",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -359,14 +359,14 @@
       "name": "Tag function parenthesis",
       "scope": "tag.punctuation.begin.arrow.parameters.embedded,tag.punctuation.end.arrow.parameters.embedded",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
       "name": "Object-literal key class",
       "scope": "object-literal.object.member.key.field.other,object-literal.object.member.key.accessor,object-literal.object.member.key.array.brace.square",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -387,7 +387,7 @@
       "name": "CSS Property entity",
       "scope": "entity.other.attribute-name.class.css,entity.other.attribute-name.class.scss,entity.other.attribute-name.parent-selector-suffix.css,entity.other.attribute-name.parent-selector-suffix.scss",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -401,7 +401,7 @@
       "name": "CSS Property-value function",
       "scope": "property-list.property-value.function",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -422,7 +422,7 @@
       "name": "CSS ID, Selector",
       "scope": "meta.selector.css, entity.attribute-name.id, entity.other.attribute-name.pseudo-class.css,entity.other.attribute-name.pseudo-element.css",
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     },
     {
@@ -436,7 +436,7 @@
       "name": "Triple-slash Directive Tag",
       "scope": "triple-slash.tag",
       "settings": {
-        "foreground": "#007775",
+        "foreground": "#89D264",
         "fontStyle": "italic"
       }
     },
@@ -512,7 +512,7 @@
         "support.variable.property.php"
       ],
       "settings": {
-        "foreground": "#007775"
+        "foreground": "#89D264"
       }
     }
   ]
