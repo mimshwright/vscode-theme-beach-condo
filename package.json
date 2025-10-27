@@ -10,13 +10,45 @@
   "categories": [
     "Themes"
   ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "watch": "node scripts/build.js && echo 'Watching for changes...' && nodemon --watch src --exec 'node scripts/build.js'"
+  },
   "contributes": {
     "themes": [
       {
-        "label": "Claution Dark",
+        "label": "Dotonbori",
         "uiTheme": "vs-dark",
-        "path": "./themes/claution-dark-theme.json"
+        "path": "./themes/dotonbori-dark-theme.json"
+      },
+      {
+        "label": "Dotonbori Light",
+        "uiTheme": "vs",
+        "path": "./themes/dotonbori-light-theme.json"
+      },
+      {
+        "label": "TelAvision",
+        "uiTheme": "vs-dark",
+        "path": "./themes/telavision-dark-theme.json"
+      },
+      {
+        "label": "TelAvision Light",
+        "uiTheme": "vs",
+        "path": "./themes/telavision-light-theme.json"
+      },
+      {
+        "label": "TelAvisionBold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/telavisionbold-dark-theme.json"
+      },
+      {
+        "label": "TelAvisionBold Light",
+        "uiTheme": "vs",
+        "path": "./themes/telavisionbold-light-theme.json"
       }
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
