@@ -193,7 +193,7 @@ const barcelonaDark = {
   comment: palettes.barcelona.gray50,
   operator: palettes.barcelona.gray60,
   bracket: palettes.barcelona.pink,
-  lineNumber: palettes.barcelona.gray50,
+  // lineNumber: palettes.barcelona.gray50,
   lineNumberActive: palettes.barcelona.blue,
 };
 

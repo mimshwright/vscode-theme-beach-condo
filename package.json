@@ -1,0 +1,64 @@
+{
+  "name": "vscode-theme-condo",
+  "displayName": "Condo Color Themes",
+  "description": "A set of custom color themes for VSCode",
+  "version": "0.0.1",
+  "publisher": "mimshwright",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "scripts": {
+    "build": "node scripts/build.js",
+    "watch": "node scripts/build.js && echo 'Watching for changes...' && nodemon --watch src --exec 'node scripts/build.js'"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Condo - Belmopan - Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/condo-belmopan-dark.json"
+      },
+      {
+        "label": "Condo - Belmopan - Light",
+        "uiTheme": "vs",
+        "path": "./themes/condo-belmopan-light.json"
+      },
+      {
+        "label": "Condo - Barcelona - Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/condo-barcelona-dark.json"
+      },
+      {
+        "label": "Condo - Barcelona - Light",
+        "uiTheme": "vs",
+        "path": "./themes/condo-barcelona-light.json"
+      },
+      {
+        "label": "Condo - Barcelona - Bold - Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/condo-barcelona-bold-dark.json"
+      },
+      {
+        "label": "Condo - Barcelona - Bold - Light",
+        "uiTheme": "vs",
+        "path": "./themes/condo-barcelona-bold-light.json"
+      },
+      {
+        "label": "Condo - Brisbane - Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/condo-brisbane-dark.json"
+      },
+      {
+        "label": "Condo - Brisbane - Light",
+        "uiTheme": "vs",
+        "path": "./themes/condo-brisbane-light.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
