@@ -1,6 +1,8 @@
 # Beach Condo
 
-Vibes for when you'd rather be coding at the beach but don't want to get sand in your laptop.
+![Beach Condo Icon](./icon.png)
+
+Themes for when you'd rather be coding at the beach but don't want to get sand in your laptop.
 
 ## Themes
 
