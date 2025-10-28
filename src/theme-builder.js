@@ -247,7 +247,7 @@ const barcelonaBoldDark = {
   bracketColor5: palettes.barcelonaBold.redDark,
   bracketColor6: palettes.barcelonaBold.purple,
   lineNumberActive: palettes.barcelonaBold.greenLight,
-  border: palettes.barcelonaBold.redDark,
+  border: palettes.barcelonaBold.yellowDark,
 };
 
 const barcelonaBoldLight = {
@@ -256,8 +256,6 @@ const barcelonaBoldLight = {
   editorBackground: palettes.barcelonaBold.gray90,
   panelBackground: palettes.barcelonaBold.greenLighter,
   chromeBackground: palettes.barcelonaBold.yellow,
-  // primary: palettes.barcelonaBold.green,
-  // primaryTransparent: palettes.barcelonaBold.green + "20",
   selection: palettes.barcelonaBold.pinkDark + "66",
   // keyword: palettes.barcelonaBold.red,
   string: palettes.barcelonaBold.pinkDark,
