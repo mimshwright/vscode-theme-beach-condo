@@ -233,7 +233,7 @@ const barcelonaDark = {
 
 const barcelonaLight = {
   ...defaultMapping(palettes.barcelona),
-  foreground: palettes.barcelona.green,
+  foreground: palettes.barcelona.teal,
   editorBackground: palettes.barcelona.gray100,
   panelBackground: palettes.barcelona.gray95,
   chromeBackground: palettes.barcelona.gray90,
@@ -242,12 +242,12 @@ const barcelonaLight = {
   selection: palettes.barcelona.blue + "30",
   keyword: palettes.barcelona.redDark,
   string: palettes.barcelona.gray10,
-  number: palettes.barcelona.redDark,
-  type: palettes.barcelona.yellowDark,
-  comment: palettes.barcelona.gray40,
-  operator: palettes.barcelona.gray60,
+  number: palettes.barcelona.green,
+  type: palettes.barcelona.yellow,
+  comment: palettes.barcelona.blue,
+  operator: palettes.barcelona.blueDark,
   bracket: palettes.barcelona.redDark,
-  lineNumber: palettes.barcelona.gray40,
+  lineNumber: palettes.barcelona.pinkLight,
   lineNumberActive: palettes.barcelona.green,
 };
 
