@@ -8,43 +8,87 @@ Themes for when you'd rather be coding at the beach but don't want to get sand i
 
 ### Belize City
 
-#### Belize City - Dark
+<table>
+<tr>
+<td width="50%">
+
+**Belize City - Dark**
 
 ![Belize City Dark](./screenshots/belize-city-dark.png)
 
-#### Belize City - Light
+</td>
+<td width="50%">
+
+**Belize City - Light**
 
 ![Belize City Light](./screenshots/belize-city-light.png)
 
+</td>
+</tr>
+</table>
+
 ### Barcelona
 
-#### Barcelona - Dark
+<table>
+<tr>
+<td width="50%">
+
+**Barcelona - Dark**
 
 ![Barcelona Dark](./screenshots/barcelona-dark.png)
 
-#### Barcelona - Light
+</td>
+<td width="50%">
+
+**Barcelona - Light**
 
 ![Barcelona Light](./screenshots/barcelona-light.png)
 
+</td>
+</tr>
+</table>
+
 ### Bangkok
 
-#### Bangkok - Dark
+<table>
+<tr>
+<td width="50%">
+
+**Bangkok - Dark**
 
 ![Bangkok Dark](./screenshots/bangkok-dark.png)
 
-#### Bangkok - Light
+</td>
+<td width="50%">
+
+**Bangkok - Light**
 
 ![Bangkok Light](./screenshots/bangkok-light.png)
 
+</td>
+</tr>
+</table>
+
 ### Brisbane
 
-#### Brisbane - Dark
+<table>
+<tr>
+<td width="50%">
+
+**Brisbane - Dark**
 
 ![Brisbane Dark](./screenshots/brisbane-dark.png)
 
-#### Brisbane - Light
+</td>
+<td width="50%">
+
+**Brisbane - Light**
 
 ![Brisbane Light](./screenshots/brisbane-light.png)
+
+</td>
+</tr>
+</table>
 
 ## Development
 
