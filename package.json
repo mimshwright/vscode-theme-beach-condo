@@ -82,6 +82,16 @@
         "label": "Beach Condo - Brisbane - Light",
         "uiTheme": "vs",
         "path": "./themes/beach-condo-brisbane-light.json"
+      },
+      {
+        "label": "Beach Condo - Brighton - Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/beach-condo-brighton-dark.json"
+      },
+      {
+        "label": "Beach Condo - Brighton - Light",
+        "uiTheme": "vs",
+        "path": "./themes/beach-condo-brighton-light.json"
       }
     ]
   },

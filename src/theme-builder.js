@@ -118,6 +118,29 @@ const palettes = {
     gray90: "#f1d7ba",
     gray10: "#073620",
   },
+
+  brighton: {
+    ...defaultPalette,
+
+    // Primary palette
+    blueDark: "#051634",
+    blue: "#162B3A",
+    blueLight: "#264b5a",
+    yellow: "#a3782f",
+    red: "#CC222a",
+    pink: "#db9292",
+    purpleLight: "#dac7df",
+    greenLight: "#c7e0dd",
+    greenDark: "#4c513b",
+
+    gray100: "#FEFEFF",
+    gray90: "#c7e0dd",
+    gray80: "#CCDDFF",
+    gray60: "#8aa5af",
+    gray20: "#2a2c26",
+    gray10: "#162b3a",
+    gray0: "#051634",
+  },
 };
 
 // ============================================
@@ -326,6 +349,50 @@ const brisbaneLight = {
   bracketColor1: palettes.brisbane.greenDarkMid,
   bracketColor2: palettes.brisbane.blueDark,
   bracketColor3: palettes.brisbane.greenDark,
+};
+
+const brightonDark = {
+  ...defaultMapping(palettes.brighton),
+  foreground: palettes.brighton.greenLight,
+  editorBackground: palettes.brighton.gray10,
+  panelBackground: palettes.brighton.gray0,
+  chromeBackground: palettes.brighton.gray0,
+  primary: palettes.brighton.purpleLight,
+  primaryTransparent: palettes.brighton.purpleLight + "40",
+  keyword: palettes.brighton.yellow,
+  string: palettes.brighton.purpleLight,
+  number: palettes.brighton.purpleLight,
+  comment: palettes.brighton.gray60,
+  operator: palettes.brighton.pink,
+  type: palettes.brighton.pink,
+  border: palettes.brighton.red,
+  selection: palettes.brighton.red + "66",
+  lineNumber: palettes.brighton.purpleLight,
+  lineNumberActive: palettes.brighton.red,
+  bracketColor2: palettes.brisbane.greenLight,
+  bracketColor4: palettes.brisbane.yellow,
+  bracketColor5: palettes.brisbane.red,
+};
+
+const brightonLight = {
+  ...defaultMapping(palettes.brighton),
+  ...brightonDark,
+  foreground: palettes.brighton.blueLight,
+  editorBackground: palettes.brighton.gray100,
+  panelBackground: palettes.brighton.gray80,
+  chromeBackground: palettes.brighton.gray80,
+  primary: palettes.brighton.blueDark,
+  primaryTransparent: palettes.brighton.blueDark + "20",
+  selection: palettes.brighton.yellow + "50",
+  keyword: palettes.brighton.red,
+  string: palettes.brighton.blueDark,
+  number: palettes.brighton.red,
+  type: palettes.brighton.yellow,
+  comment: palettes.brighton.pink,
+  operator: palettes.brighton.red,
+  lineNumber: palettes.brighton.pink,
+  bracketColor2: palettes.brighton.yellow,
+  bracketColor4: palettes.brighton.blueDark,
 };
 
 // ============================================
@@ -910,4 +977,11 @@ module.exports = {
     dark: buildTheme("dark", brisbaneDark),
     light: buildTheme("light", brisbaneLight),
   },
+<<<<<<< HEAD
+=======
+  brighton: {
+    dark: buildTheme("dark", brightonDark),
+    light: buildTheme("light", brightonLight),
+  },
+>>>>>>> 0d22109 (Added brighton)
 };
