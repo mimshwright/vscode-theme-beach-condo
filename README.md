@@ -6,6 +6,8 @@ Themes for when you'd rather be coding at the beach but don't want to get sand i
 
 ## Themes
 
+_Comes in 4 costal flavors..._
+
 ### Belize City
 
 <table>
