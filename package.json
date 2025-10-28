@@ -1,15 +1,41 @@
 {
-  "name": "vscode-theme-beach-condo",
+  "name": "beach-condo",
   "displayName": "Beach Condo Color Themes",
-  "description": "A set of custom color themes for VSCode",
-  "version": "0.0.1",
+  "description": "Color vibes for vibing indoors on your trip to the beach.",
+  "version": "1.0.0",
   "publisher": "mimshwright",
+  "author": {
+    "name": "Mims Wright"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mimshwright/vscode-theme-beach-condo"
+  },
+  "bugs": {
+    "url": "https://github.com/mimshwright/vscode-theme-beach-condo/issues"
+  },
+  "homepage": "https://github.com/mimshwright/vscode-theme-beach-condo#readme",
+  "keywords": [
+    "theme",
+    "color-theme",
+    "dark theme",
+    "light theme",
+    "vibrant",
+    "coastal",
+    "beach"
+  ],
   "engines": {
     "vscode": "^1.60.0"
   },
   "categories": [
     "Themes"
   ],
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#162b3a",
+    "theme": "dark"
+  },
   "scripts": {
     "build": "node scripts/build.js",
     "watch": "node scripts/build.js && echo 'Watching for changes...' && nodemon --watch src --exec 'node scripts/build.js'"
