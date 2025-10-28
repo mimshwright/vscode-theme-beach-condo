@@ -117,29 +117,6 @@ const palettes = {
     gray90: "#f1d7ba",
     gray10: "#073620",
   },
-
-  bristol: {
-    ...defaultPalette,
-
-    // Primary palette
-    blueDark: "#051634",
-    blue: "#162B3A",
-    blueLight: "#264b5a",
-    yellow: "#a3782f",
-    red: "#CC222a",
-    pink: "#db9292",
-    purpleLight: "#dac7df",
-    greenLight: "#c7e0dd",
-    greenDark: "#4c513b",
-
-    gray100: "#FEFEFF",
-    gray90: "#c7e0dd",
-    gray80: "#CCDDFF",
-    gray60: "#8aa5af",
-    gray20: "#2a2c26",
-    gray10: "#162b3a",
-    gray0: "#051634",
-  },
 };
 
 // ============================================
@@ -332,51 +309,6 @@ const brisbaneLight = {
   bracketColor1: palettes.brisbane.greenDarkMid,
   bracketColor2: palettes.brisbane.blueDark,
   bracketColor3: palettes.brisbane.greenDark,
-};
-
-// Bristol semantic mappings
-const bristolDark = {
-  ...defaultMapping(palettes.bristol),
-  foreground: palettes.bristol.greenLight,
-  editorBackground: palettes.bristol.gray10,
-  panelBackground: palettes.bristol.gray0,
-  chromeBackground: palettes.bristol.gray0,
-  primary: palettes.bristol.purpleLight,
-  primaryTransparent: palettes.bristol.purpleLight + "40",
-  keyword: palettes.bristol.yellow,
-  string: palettes.bristol.purpleLight,
-  number: palettes.bristol.purpleLight,
-  comment: palettes.bristol.gray60,
-  operator: palettes.bristol.pink,
-  type: palettes.bristol.pink,
-  border: palettes.bristol.red,
-  selection: palettes.bristol.red + "66",
-  lineNumber: palettes.bristol.purpleLight,
-  lineNumberActive: palettes.bristol.red,
-  bracketColor2: palettes.brisbane.greenLight,
-  bracketColor4: palettes.brisbane.yellow,
-  bracketColor5: palettes.brisbane.red,
-};
-
-const bristolLight = {
-  ...defaultMapping(palettes.bristol),
-  ...bristolDark,
-  foreground: palettes.bristol.blueLight,
-  editorBackground: palettes.bristol.gray100,
-  panelBackground: palettes.bristol.gray80,
-  chromeBackground: palettes.bristol.gray80,
-  primary: palettes.bristol.blueDark,
-  primaryTransparent: palettes.bristol.blueDark + "20",
-  selection: palettes.bristol.yellow + "50",
-  keyword: palettes.bristol.red,
-  string: palettes.bristol.blueDark,
-  number: palettes.bristol.red,
-  type: palettes.bristol.yellow,
-  comment: palettes.bristol.pink,
-  operator: palettes.bristol.red,
-  lineNumber: palettes.bristol.pink,
-  bracketColor2: palettes.bristol.yellow,
-  bracketColor4: palettes.bristol.blueDark,
 };
 
 // ============================================
@@ -931,9 +863,5 @@ module.exports = {
   brisbane: {
     dark: buildTheme("dark", brisbaneDark),
     light: buildTheme("light", brisbaneLight),
-  },
-  bristol: {
-    dark: buildTheme("dark", bristolDark),
-    light: buildTheme("light", bristolLight),
   },
 };
