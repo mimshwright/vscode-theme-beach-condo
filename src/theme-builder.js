@@ -30,7 +30,7 @@ const defaultPalette = {
 };
 
 const palettes = {
-  belmopan: {
+  belizeCity: {
     ...defaultPalette,
 
     // Primary palette
@@ -69,7 +69,7 @@ const palettes = {
     gray0: "#000909",
   },
 
-  barcelonaBold: {
+  bangkok: {
     ...defaultPalette,
 
     // Primary palette
@@ -152,43 +152,43 @@ const defaultMapping = (palette) => ({
 });
 
 // Belmopan semantic mappings
-const belmopanDark = {
-  ...defaultMapping(palettes.belmopan),
-  foreground: palettes.belmopan.green,
-  editorBackground: palettes.belmopan.gray20,
-  primary: palettes.belmopan.purple,
-  primaryTransparent: palettes.belmopan.purple + "40",
-  selection: palettes.belmopan.yellowDark + "30",
-  keyword: palettes.belmopan.red,
-  string: palettes.belmopan.gray100,
-  number: palettes.belmopan.pink,
-  type: palettes.belmopan.blue,
-  comment: palettes.belmopan.redDark,
-  operator: palettes.belmopan.pink,
-  bracket: palettes.belmopan.pink,
-  lineNumber: palettes.belmopan.pink,
-  lineNumberActive: palettes.belmopan.green,
-  border: palettes.belmopan.pink,
+const belizeCityDark = {
+  ...defaultMapping(palettes.belizeCity),
+  foreground: palettes.belizeCity.green,
+  editorBackground: palettes.belizeCity.gray20,
+  primary: palettes.belizeCity.purple,
+  primaryTransparent: palettes.belizeCity.purple + "40",
+  selection: palettes.belizeCity.yellowDark + "30",
+  keyword: palettes.belizeCity.red,
+  string: palettes.belizeCity.gray100,
+  number: palettes.belizeCity.pink,
+  type: palettes.belizeCity.blue,
+  comment: palettes.belizeCity.redDark,
+  operator: palettes.belizeCity.pink,
+  bracket: palettes.belizeCity.pink,
+  lineNumber: palettes.belizeCity.pink,
+  lineNumberActive: palettes.belizeCity.green,
+  border: palettes.belizeCity.pink,
 };
 
-const belmopanLight = {
-  ...defaultMapping(palettes.belmopan),
-  foreground: palettes.belmopan.gray10,
-  editorBackground: palettes.belmopan.gray95,
-  panelBackground: palettes.belmopan.gray100,
-  chromeBackground: palettes.belmopan.gray100,
-  primary: palettes.belmopan.purple,
-  primaryTransparent: palettes.belmopan.purple + "20",
-  selection: palettes.belmopan.green + "30",
-  keyword: palettes.belmopan.red,
-  string: palettes.belmopan.purpleDark,
-  number: palettes.belmopan.pink,
-  type: palettes.belmopan.blueDark,
-  comment: palettes.belmopan.pink,
-  operator: palettes.belmopan.greenDark,
-  bracket: palettes.belmopan.pink,
-  lineNumber: palettes.belmopan.pink,
-  lineNumberActive: palettes.belmopan.green,
+const belizeCityLight = {
+  ...defaultMapping(palettes.belizeCity),
+  foreground: palettes.belizeCity.gray10,
+  editorBackground: palettes.belizeCity.gray95,
+  panelBackground: palettes.belizeCity.gray100,
+  chromeBackground: palettes.belizeCity.gray100,
+  primary: palettes.belizeCity.purple,
+  primaryTransparent: palettes.belizeCity.purple + "20",
+  selection: palettes.belizeCity.green + "30",
+  keyword: palettes.belizeCity.red,
+  string: palettes.belizeCity.purpleDark,
+  number: palettes.belizeCity.pink,
+  type: palettes.belizeCity.blueDark,
+  comment: palettes.belizeCity.pink,
+  operator: palettes.belizeCity.greenDark,
+  bracket: palettes.belizeCity.pink,
+  lineNumber: palettes.belizeCity.pink,
+  lineNumberActive: palettes.belizeCity.green,
 };
 
 // Barcelona semantic mappings
@@ -229,50 +229,50 @@ const barcelonaLight = {
 };
 
 // Barcelona Bold semantic mappings
-const barcelonaBoldDark = {
-  ...defaultMapping(palettes.barcelonaBold),
-  foreground: palettes.barcelonaBold.yellow,
-  editorBackground: palettes.barcelonaBold.gray0,
-  panelBackground: palettes.barcelonaBold.gray30,
-  chromeBackground: palettes.barcelonaBold.gray10,
-  selection: palettes.barcelonaBold.purple + "AA",
-  string: palettes.barcelonaBold.gray85,
-  number: palettes.barcelonaBold.pink,
-  comment: palettes.barcelonaBold.blue + "88",
-  operator: palettes.barcelonaBold.redDark,
-  bracketColor1: palettes.barcelonaBold.yellowDark,
-  bracketColor2: palettes.barcelonaBold.greenLight,
-  bracketColor3: palettes.barcelonaBold.blue,
-  bracketColor4: palettes.barcelonaBold.red,
-  bracketColor5: palettes.barcelonaBold.redDark,
-  bracketColor6: palettes.barcelonaBold.purple,
-  lineNumberActive: palettes.barcelonaBold.greenLight,
-  border: palettes.barcelonaBold.yellowDark,
+const bangkokDark = {
+  ...defaultMapping(palettes.bangkok),
+  foreground: palettes.bangkok.yellow,
+  editorBackground: palettes.bangkok.gray0,
+  panelBackground: palettes.bangkok.gray30,
+  chromeBackground: palettes.bangkok.gray10,
+  selection: palettes.bangkok.purple + "AA",
+  string: palettes.bangkok.gray85,
+  number: palettes.bangkok.pink,
+  comment: palettes.bangkok.blue + "88",
+  operator: palettes.bangkok.redDark,
+  bracketColor1: palettes.bangkok.yellowDark,
+  bracketColor2: palettes.bangkok.greenLight,
+  bracketColor3: palettes.bangkok.blue,
+  bracketColor4: palettes.bangkok.red,
+  bracketColor5: palettes.bangkok.redDark,
+  bracketColor6: palettes.bangkok.purple,
+  lineNumberActive: palettes.bangkok.greenLight,
+  border: palettes.bangkok.yellowDark,
 };
 
-const barcelonaBoldLight = {
-  ...defaultMapping(palettes.barcelonaBold),
-  foreground: palettes.barcelonaBold.green,
-  editorBackground: palettes.barcelonaBold.gray90,
-  panelBackground: palettes.barcelonaBold.greenLighter,
-  chromeBackground: palettes.barcelonaBold.yellow,
-  selection: palettes.barcelonaBold.pinkDark + "66",
-  // keyword: palettes.barcelonaBold.red,
-  string: palettes.barcelonaBold.pinkDark,
-  number: palettes.barcelonaBold.redDark,
-  type: palettes.barcelonaBold.blueDark,
-  comment: palettes.barcelonaBold.greenDark,
-  operator: palettes.barcelonaBold.yellowDark,
-  // bracket: palettes.barcelonaBold.redDark,
-  lineNumber: palettes.barcelonaBold.yellow,
-  lineNumberActive: palettes.barcelonaBold.pinkDark,
-  bracketColor1: palettes.barcelonaBold.yellowDark,
-  bracketColor2: palettes.barcelonaBold.greenLight,
-  bracketColor3: palettes.barcelonaBold.blue,
-  bracketColor4: palettes.barcelonaBold.red,
-  bracketColor5: palettes.barcelonaBold.redDark,
-  bracketColor6: palettes.barcelonaBold.purple,
-  border: palettes.barcelonaBold.pinkDark,
+const bangkokLight = {
+  ...defaultMapping(palettes.bangkok),
+  foreground: palettes.bangkok.green,
+  editorBackground: palettes.bangkok.gray90,
+  panelBackground: palettes.bangkok.greenLighter,
+  chromeBackground: palettes.bangkok.yellow,
+  selection: palettes.bangkok.pinkDark + "66",
+  // keyword: palettes.bangkok.red,
+  string: palettes.bangkok.pinkDark,
+  number: palettes.bangkok.redDark,
+  type: palettes.bangkok.blueDark,
+  comment: palettes.bangkok.greenDark,
+  operator: palettes.bangkok.yellowDark,
+  // bracket: palettes.bangkok.redDark,
+  lineNumber: palettes.bangkok.yellow,
+  lineNumberActive: palettes.bangkok.pinkDark,
+  bracketColor1: palettes.bangkok.yellowDark,
+  bracketColor2: palettes.bangkok.greenLight,
+  bracketColor3: palettes.bangkok.blue,
+  bracketColor4: palettes.bangkok.red,
+  bracketColor5: palettes.bangkok.redDark,
+  bracketColor6: palettes.bangkok.purple,
+  border: palettes.bangkok.pinkDark,
 };
 
 // Brisbane semantic mappings
@@ -848,17 +848,17 @@ function buildTheme(type, semantic) {
 // EXPORTS
 // ============================================
 module.exports = {
-  belmopan: {
-    dark: buildTheme("dark", belmopanDark),
-    light: buildTheme("light", belmopanLight),
+  belizeCity: {
+    dark: buildTheme("dark", belizeCityDark),
+    light: buildTheme("light", belizeCityLight),
   },
   barcelona: {
     dark: buildTheme("dark", barcelonaDark),
     light: buildTheme("light", barcelonaLight),
   },
-  barcelonaBold: {
-    dark: buildTheme("dark", barcelonaBoldDark),
-    light: buildTheme("light", barcelonaBoldLight),
+  bangkok: {
+    dark: buildTheme("dark", bangkokDark),
+    light: buildTheme("light", bangkokLight),
   },
   brisbane: {
     dark: buildTheme("dark", brisbaneDark),

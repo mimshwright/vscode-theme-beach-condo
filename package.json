@@ -1,6 +1,6 @@
 {
-  "name": "vscode-theme-condo",
-  "displayName": "Condo Color Themes",
+  "name": "vscode-theme-beach-condo",
+  "displayName": "Beach Condo Color Themes",
   "description": "A set of custom color themes for VSCode",
   "version": "0.0.1",
   "publisher": "mimshwright",
@@ -17,44 +17,44 @@
   "contributes": {
     "themes": [
       {
-        "label": "Condo - Belmopan - Dark",
+        "label": "Beach Condo - Belize City - Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/condo-belmopan-dark.json"
+        "path": "./themes/beach-condo-belize-city-dark.json"
       },
       {
-        "label": "Condo - Belmopan - Light",
+        "label": "Beach Condo - Belize City - Light",
         "uiTheme": "vs",
-        "path": "./themes/condo-belmopan-light.json"
+        "path": "./themes/beach-condo-belize-city-light.json"
       },
       {
-        "label": "Condo - Barcelona - Dark",
+        "label": "Beach Condo - Barcelona - Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/condo-barcelona-dark.json"
+        "path": "./themes/beach-condo-barcelona-dark.json"
       },
       {
-        "label": "Condo - Barcelona - Light",
+        "label": "Beach Condo - Barcelona - Light",
         "uiTheme": "vs",
-        "path": "./themes/condo-barcelona-light.json"
+        "path": "./themes/beach-condo-barcelona-light.json"
       },
       {
-        "label": "Condo - Barcelona - Bold - Dark",
+        "label": "Beach Condo - Bangkok - Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/condo-barcelona-bold-dark.json"
+        "path": "./themes/beach-condo-bangkok-dark.json"
       },
       {
-        "label": "Condo - Barcelona - Bold - Light",
+        "label": "Beach Condo - Bangkok - Light",
         "uiTheme": "vs",
-        "path": "./themes/condo-barcelona-bold-light.json"
+        "path": "./themes/beach-condo-bangkok-light.json"
       },
       {
-        "label": "Condo - Brisbane - Dark",
+        "label": "Beach Condo - Brisbane - Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/condo-brisbane-dark.json"
+        "path": "./themes/beach-condo-brisbane-dark.json"
       },
       {
-        "label": "Condo - Brisbane - Light",
+        "label": "Beach Condo - Brisbane - Light",
         "uiTheme": "vs",
-        "path": "./themes/condo-brisbane-light.json"
+        "path": "./themes/beach-condo-brisbane-light.json"
       }
     ]
   },
