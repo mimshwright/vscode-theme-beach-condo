@@ -6,7 +6,7 @@ Themes for people who spend their whole vacation vibe coding.
 
 ## Themes
 
-_Comes in 4 costal flavors..._
+_Comes in 5 costal flavors..._
 
 ### Belize City
 
