@@ -17,15 +17,15 @@
     "statusBar.background": "#f1d7ba",
     "tab.activeBackground": "#f1d7ba",
     "tab.inactiveBackground": "#f1d7ba",
-    "tab.activeBorder": "#5b1c62",
+    "tab.activeBorder": "#d62e6c",
     "editorSuggestWidget.background": "#f1d7ba",
     "editorSuggestWidget.highlightForeground": "#d62e6c",
-    "editorSuggestWidget.selectedBackground": "#5b1c6240",
-    "badge.background": "#5b1c62",
+    "editorSuggestWidget.selectedBackground": "#d62e6c66",
+    "badge.background": "#d62e6c",
     "activityBar.background": "#f1d7ba",
-    "activityBar.foreground": "#abb818",
+    "activityBar.foreground": "#5b1c62",
     "activityBar.activeForeground": "#5b1c62",
-    "activityBarBadge.background": "#5b1c62",
+    "activityBarBadge.background": "#d62e6c",
     "editorBracketHighlight.foreground1": "#328954",
     "editorBracketHighlight.foreground2": "#6ab8d1",
     "editorBracketHighlight.foreground3": "#073129",
@@ -232,17 +232,40 @@
       }
     },
     {
-      "name": "Documentation Block",
-      "scope": "comment.block.documentation",
+      "name": "Documentation Comments",
+      "scope": [
+        "comment.block.documentation",
+        "comment.line.documentation",
+        "comment.block.documentation.ts",
+        "comment.block.documentation.tsx",
+        "comment.line.documentation.ts",
+        "comment.line.documentation.tsx"
+      ],
       "settings": {
-        "foreground": "#2C0A25"
+        "foreground": "#d62e6cAA",
+        "fontStyle": "italic"
       }
     },
     {
-      "name": "Documentation Highlight (JSDoc)",
-      "scope": "storage.type.class.jsdoc",
+      "name": "JSDoc Tags & Types",
+      "scope": [
+        "storage.type.jsdoc",
+        "storage.type.function.jsdoc",
+        "storage.type.class.jsdoc",
+        "entity.name.type.jsdoc",
+        "entity.name.type.instance.jsdoc",
+        "variable.parameter.jsdoc",
+        "variable.parameter.function.jsdoc",
+        "keyword.other.documentation",
+        "keyword.operator.documentation",
+        "punctuation.definition.comment",
+        "punctuation.definition.comment.jsdoc",
+        "punctuation.definition.comment.ts",
+        "punctuation.definition.comment.tsx"
+      ],
       "settings": {
-        "foreground": "#d62e6c"
+        "foreground": "#d62e6cAA",
+        "fontStyle": "italic"
       }
     },
     {
@@ -298,7 +321,8 @@
       "name": "Documentation Entity",
       "scope": "entity.name.type.instance.jsdoc",
       "settings": {
-        "foreground": "#5b1c62"
+        "foreground": "#d62e6cAA",
+        "fontStyle": "italic"
       }
     },
     {

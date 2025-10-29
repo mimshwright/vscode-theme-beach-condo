@@ -8,24 +8,24 @@
     "editorLineNumber.foreground": "#ee8dc1",
     "editorLineNumber.activeForeground": "#a4d4b4",
     "editorGutter.background": "#3b1c32",
-    "titleBar.activeBackground": "#15120e",
-    "titleBar.inactiveBackground": "#15120e",
+    "titleBar.activeBackground": "#2C0A25",
+    "titleBar.inactiveBackground": "#2C0A25",
     "titleBar.activeForeground": "#ffbc92",
     "sideBar.border": "#ee8dc1",
     "sideBar.background": "#2C0A25",
     "statusBar.foreground": "#ffbc92",
-    "statusBar.background": "#15120e",
-    "tab.activeBackground": "#15120e",
+    "statusBar.background": "#2C0A25",
+    "tab.activeBackground": "#2C0A25",
     "tab.inactiveBackground": "#2C0A25",
-    "tab.activeBorder": "#a4d4b4",
+    "tab.activeBorder": "#d62e6c",
     "editorSuggestWidget.background": "#2C0A25",
     "editorSuggestWidget.highlightForeground": "#d62e6c",
-    "editorSuggestWidget.selectedBackground": "#a4d4b440",
-    "badge.background": "#a4d4b4",
-    "activityBar.background": "#15120e",
-    "activityBar.foreground": "#abb818",
+    "editorSuggestWidget.selectedBackground": "#d62e6c40",
+    "badge.background": "#d62e6c",
+    "activityBar.background": "#2C0A25",
+    "activityBar.foreground": "#ffbc92",
     "activityBar.activeForeground": "#ffbc92",
-    "activityBarBadge.background": "#a4d4b4",
+    "activityBarBadge.background": "#d62e6c",
     "editorBracketHighlight.foreground1": "#a4d4b4",
     "editorBracketHighlight.foreground2": "#95dbed",
     "editorBracketHighlight.foreground3": "#abb818",
@@ -232,17 +232,40 @@
       }
     },
     {
-      "name": "Documentation Block",
-      "scope": "comment.block.documentation",
+      "name": "Documentation Comments",
+      "scope": [
+        "comment.block.documentation",
+        "comment.line.documentation",
+        "comment.block.documentation.ts",
+        "comment.block.documentation.tsx",
+        "comment.line.documentation.ts",
+        "comment.line.documentation.tsx"
+      ],
       "settings": {
-        "foreground": "#f3e9ee"
+        "foreground": "#ffbc9266",
+        "fontStyle": "italic"
       }
     },
     {
-      "name": "Documentation Highlight (JSDoc)",
-      "scope": "storage.type.class.jsdoc",
+      "name": "JSDoc Tags & Types",
+      "scope": [
+        "storage.type.jsdoc",
+        "storage.type.function.jsdoc",
+        "storage.type.class.jsdoc",
+        "entity.name.type.jsdoc",
+        "entity.name.type.instance.jsdoc",
+        "variable.parameter.jsdoc",
+        "variable.parameter.function.jsdoc",
+        "keyword.other.documentation",
+        "keyword.operator.documentation",
+        "punctuation.definition.comment",
+        "punctuation.definition.comment.jsdoc",
+        "punctuation.definition.comment.ts",
+        "punctuation.definition.comment.tsx"
+      ],
       "settings": {
-        "foreground": "#d62e6c"
+        "foreground": "#ffbc9266",
+        "fontStyle": "italic"
       }
     },
     {
@@ -298,7 +321,8 @@
       "name": "Documentation Entity",
       "scope": "entity.name.type.instance.jsdoc",
       "settings": {
-        "foreground": "#ffbc92"
+        "foreground": "#ffbc9266",
+        "fontStyle": "italic"
       }
     },
     {

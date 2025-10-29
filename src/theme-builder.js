@@ -6,19 +6,20 @@ const defaultPalette = {
   red: "#ed561a",
   redDark: "#c44e0a",
   pink: "#ffc3c3",
+  pinkDark: "#d16ba6",
   yellow: "#ffb454",
   yellowDark: "#d99444",
   blue: "#95dbed",
   blueDark: "#6ab8d1",
-  purple: "#883556",
-  purpleDark: "#1E0914",
   green: "#0f8142",
   greenLight: "#11a056",
   greenLighter: "#eaf4d6",
   greenDark: "#154936",
+  purpleLight: "#dac7df",
+  purple: "#5b1c62",
+  purpleDark: "#3b1c32",
 
   gray100: "#e8e3d9",
-  gray95: "#faf8f3",
   gray90: "#f0ede5",
   gray85: "#e8e3d9",
   gray60: "#999999",
@@ -41,7 +42,7 @@ const palettes = {
     green: "#38e284",
     greenDark: "#2a8c5a",
 
-    gray10: "#2f2316",
+    gray10: "#291a18ff",
   },
 
   barcelona: {
@@ -156,7 +157,10 @@ const defaultMapping = (palette) => ({
 const belizeCityDark = {
   ...defaultMapping(palettes.belizeCity),
   foreground: palettes.belizeCity.green,
+  activityBarForeground: palettes.belizeCity.pink,
   editorBackground: palettes.belizeCity.gray20,
+  panelBackground: palettes.belizeCity.gray10,
+  chromeBackground: palettes.belizeCity.gray10,
   primary: palettes.belizeCity.purple,
   primaryTransparent: palettes.belizeCity.purple + "40",
   selection: palettes.belizeCity.yellowDark + "30",
@@ -170,6 +174,7 @@ const belizeCityDark = {
   lineNumber: palettes.belizeCity.pink,
   lineNumberActive: palettes.belizeCity.green,
   border: palettes.belizeCity.pink,
+  bracketColor5: palettes.belizeCity.pinkDark,
 };
 
 const belizeCityLight = {
@@ -196,27 +201,30 @@ const belizeCityLight = {
 const barcelonaDark = {
   ...defaultMapping(palettes.barcelona),
   foreground: palettes.barcelona.blue,
+  activityBarForeground: palettes.barcelona.pink,
   editorBackground: palettes.barcelona.tealDarker,
   panelBackground: palettes.barcelona.gray10,
-  chromeBackground: palettes.barcelona.gray0,
-  primary: palettes.barcelona.teal,
-  primaryTransparent: palettes.barcelona.teal + "40",
+  chromeBackground: palettes.barcelona.gray10,
+  primary: palettes.barcelona.redDark,
+  primaryTransparent: palettes.barcelona.redDark + "40",
   selection: palettes.barcelona.purple + "AA",
   keyword: palettes.barcelona.red,
   string: palettes.barcelona.green,
   number: palettes.barcelona.pinkLight,
   type: palettes.barcelona.yellow,
   comment: palettes.barcelona.teal,
+  bracketColor5: palettes.barcelona.redDark,
 };
 
 const barcelonaLight = {
   ...defaultMapping(palettes.barcelona),
   foreground: palettes.barcelona.teal,
+  activityBarForeground: palettes.barcelona.teal,
   editorBackground: palettes.barcelona.gray100,
   panelBackground: palettes.barcelona.gray95,
   chromeBackground: palettes.barcelona.gray90,
-  primary: palettes.barcelona.teal,
-  primaryTransparent: palettes.barcelona.teal + "20",
+  primary: palettes.barcelona.pinkDark,
+  primaryTransparent: palettes.barcelona.pinkDark + "20",
   selection: palettes.barcelona.blue + "30",
   keyword: palettes.barcelona.redDark,
   string: palettes.barcelona.gray10,
@@ -227,11 +235,14 @@ const barcelonaLight = {
   bracket: palettes.barcelona.redDark,
   lineNumber: palettes.barcelona.pinkLight,
   lineNumberActive: palettes.barcelona.green,
+  bracketColor1: palettes.barcelona.yellowDark,
+  bracketColor5: palettes.barcelona.pinkDark,
 };
 
 const bangkokDark = {
   ...defaultMapping(palettes.bangkok),
   foreground: palettes.bangkok.yellow,
+  activityBarForeground: palettes.bangkok.pink,
   editorBackground: palettes.bangkok.gray0,
   panelBackground: palettes.bangkok.gray30,
   chromeBackground: palettes.bangkok.gray10,
@@ -253,6 +264,7 @@ const bangkokDark = {
 const bangkokLight = {
   ...defaultMapping(palettes.bangkok),
   foreground: palettes.bangkok.green,
+  activityBarForeground: palettes.bangkok.green,
   editorBackground: palettes.bangkok.gray90,
   panelBackground: palettes.bangkok.greenLighter,
   chromeBackground: palettes.bangkok.yellow,
@@ -261,9 +273,11 @@ const bangkokLight = {
   string: palettes.bangkok.pinkDark,
   number: palettes.bangkok.redDark,
   type: palettes.bangkok.blueDark,
-  comment: palettes.bangkok.greenDark,
+  comment: palettes.bangkok.greenLight + "99",
   operator: palettes.bangkok.yellowDark,
   // bracket: palettes.bangkok.redDark,
+  primary: palettes.bangkok.greenLight,
+  primaryTransparent: palettes.bangkok.greenLight + "40",
   lineNumber: palettes.bangkok.yellow,
   lineNumberActive: palettes.bangkok.pinkDark,
   bracketColor1: palettes.bangkok.yellowDark,
@@ -278,11 +292,12 @@ const bangkokLight = {
 const brisbaneDark = {
   ...defaultMapping(palettes.brisbane),
   foreground: palettes.brisbane.yellow,
+  activityBarForeground: palettes.brisbane.yellow,
   editorBackground: palettes.brisbane.purpleDark,
   panelBackground: palettes.brisbane.purpleDarker,
-  chromeBackground: palettes.brisbane.gray0,
-  primary: palettes.brisbane.greenLight,
-  primaryTransparent: palettes.brisbane.greenLight + "40",
+  chromeBackground: palettes.brisbane.purpleDarker,
+  primary: palettes.brisbane.pinkDark,
+  primaryTransparent: palettes.brisbane.pinkDark + "40",
   selection: palettes.brisbane.greenDark + "AA",
   keyword: palettes.brisbane.pinkDark,
   type: palettes.brisbane.green,
@@ -295,6 +310,7 @@ const brisbaneDark = {
 const brisbaneLight = {
   ...defaultMapping(palettes.brisbane),
   foreground: palettes.brisbane.purple,
+  activityBarForeground: palettes.brisbane.purple,
   editorBackground: palettes.brisbane.gray100,
   panelBackground: palettes.brisbane.gray90,
   chromeBackground: palettes.brisbane.gray90,
@@ -305,6 +321,8 @@ const brisbaneLight = {
   type: palettes.brisbane.greenDarkMid,
   comment: palettes.brisbane.pinkDark + "AA",
   operator: palettes.brisbane.pinkDark,
+  primary: palettes.brisbane.pinkDark,
+  primaryTransparent: palettes.brisbane.pinkDark + "66",
   bracketColor1: palettes.brisbane.greenDarkMid,
   bracketColor2: palettes.brisbane.blueDark,
   bracketColor3: palettes.brisbane.greenDark,
@@ -554,17 +572,42 @@ function buildTheme(type, semantic) {
         },
       },
       {
-        name: "Documentation Block",
-        scope: "comment.block.documentation",
+        name: "Documentation Comments",
+        scope: [
+          "comment.block.documentation",
+          "comment.line.documentation",
+          "comment.block.documentation.ts",
+          "comment.block.documentation.tsx",
+          "comment.line.documentation.ts",
+          "comment.line.documentation.tsx",
+        ],
         settings: {
-          foreground: semantic.string,
+          // Use the same styling as regular comments
+          foreground: semantic.comment,
+          fontStyle: "italic",
         },
       },
       {
-        name: "Documentation Highlight (JSDoc)",
-        scope: "storage.type.class.jsdoc",
+        name: "JSDoc Tags & Types",
+        scope: [
+          "storage.type.jsdoc",
+          "storage.type.function.jsdoc",
+          "storage.type.class.jsdoc",
+          "entity.name.type.jsdoc",
+          "entity.name.type.instance.jsdoc",
+          "variable.parameter.jsdoc",
+          "variable.parameter.function.jsdoc",
+          "keyword.other.documentation",
+          "keyword.operator.documentation",
+          "punctuation.definition.comment",
+          "punctuation.definition.comment.jsdoc",
+          "punctuation.definition.comment.ts",
+          "punctuation.definition.comment.tsx",
+        ],
         settings: {
-          foreground: semantic.keyword,
+          // Match regular comment styling: color + italic
+          foreground: semantic.comment,
+          fontStyle: "italic",
         },
       },
       {
@@ -620,7 +663,9 @@ function buildTheme(type, semantic) {
         name: "Documentation Entity",
         scope: "entity.name.type.instance.jsdoc",
         settings: {
-          foreground: semantic.foreground,
+          // Make JSDoc entities use the comment style so types look like comments
+          foreground: semantic.comment,
+          fontStyle: "italic",
         },
       },
       {
