@@ -100,6 +100,29 @@ _I've never been to Australia becuase I watch nature documentaries so I know the
 </tr>
 </table>
 
+### Brighton
+
+_Is it Brighton in Brooklyn or Brighton in England? I'll never tell!_
+
+<table>
+<tr>
+<td width="50%">
+
+**Brighton - Dark**
+
+![Brighton Dark](./screenshots/brighton-dark.png)
+
+</td>
+<td width="50%">
+
+**Brighton - Light**
+
+![Brighton Light](./screenshots/brighton-light.png)
+
+</td>
+</tr>
+</table>
+
 ## Development
 
 To build the themes from source:
