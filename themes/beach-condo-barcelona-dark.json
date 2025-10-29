@@ -23,6 +23,8 @@
     "editorSuggestWidget.selectedBackground": "#005a5940",
     "badge.background": "#005a59",
     "activityBar.background": "#000909",
+    "activityBar.foreground": "#89D264",
+    "activityBar.activeForeground": "#97cde1",
     "activityBarBadge.background": "#005a59",
     "editorBracketHighlight.foreground1": "#ffc3c3",
     "editorBracketHighlight.foreground2": "#97cde1",
@@ -455,7 +457,7 @@
     {
       "scope": "token.error-token",
       "settings": {
-        "foreground": "#f44747"
+        "foreground": "#fe6358"
       }
     },
     {

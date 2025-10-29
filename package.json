@@ -38,7 +38,8 @@
   },
   "scripts": {
     "build": "node scripts/build.js",
-    "watch": "node scripts/build.js && echo 'Watching for changes...' && nodemon --watch src --exec 'node scripts/build.js'"
+    "watch": "node scripts/build.js && echo 'Watching for changes...' && nodemon --watch src --exec 'node scripts/build.js'",
+    "dev": "npm run watch"
   },
   "contributes": {
     "themes": [

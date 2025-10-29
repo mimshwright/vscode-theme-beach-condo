@@ -125,6 +125,7 @@ const palettes = {
 
 const defaultMapping = (palette) => ({
   foreground: palette.green,
+  activityBarForeground: palette.green,
   editorBackground: palette.gray10,
   panelBackground: palette.gray10,
   chromeBackground: palette.gray10,
@@ -149,9 +150,9 @@ const defaultMapping = (palette) => ({
   bracketColor4: palette.red,
   bracketColor5: palette.purple,
   bracketColor6: palette.pink,
+  error: palette.red,
 });
 
-// Belmopan semantic mappings
 const belizeCityDark = {
   ...defaultMapping(palettes.belizeCity),
   foreground: palettes.belizeCity.green,
@@ -173,6 +174,7 @@ const belizeCityDark = {
 
 const belizeCityLight = {
   ...defaultMapping(palettes.belizeCity),
+  activityBarForeground: palettes.belizeCity.pinkDark,
   foreground: palettes.belizeCity.gray10,
   editorBackground: palettes.belizeCity.gray95,
   panelBackground: palettes.belizeCity.gray100,
@@ -191,7 +193,6 @@ const belizeCityLight = {
   lineNumberActive: palettes.belizeCity.green,
 };
 
-// Barcelona semantic mappings
 const barcelonaDark = {
   ...defaultMapping(palettes.barcelona),
   foreground: palettes.barcelona.blue,
@@ -228,7 +229,6 @@ const barcelonaLight = {
   lineNumberActive: palettes.barcelona.green,
 };
 
-// Barcelona Bold semantic mappings
 const bangkokDark = {
   ...defaultMapping(palettes.bangkok),
   foreground: palettes.bangkok.yellow,
@@ -275,7 +275,6 @@ const bangkokLight = {
   border: palettes.bangkok.pinkDark,
 };
 
-// Brisbane semantic mappings
 const brisbaneDark = {
   ...defaultMapping(palettes.brisbane),
   foreground: palettes.brisbane.yellow,
@@ -340,6 +339,8 @@ function buildTheme(type, semantic) {
       "editorSuggestWidget.selectedBackground": semantic.primaryTransparent,
       "badge.background": semantic.primary,
       "activityBar.background": semantic.chromeBackground,
+      "activityBar.foreground": semantic.activityBarForeground,
+      "activityBar.activeForeground": semantic.foreground,
       "activityBarBadge.background": semantic.primary,
       "editorBracketHighlight.foreground1": semantic.bracketColor1,
       "editorBracketHighlight.foreground2": semantic.bracketColor2,
@@ -789,7 +790,7 @@ function buildTheme(type, semantic) {
       {
         scope: "token.error-token",
         settings: {
-          foreground: type === "dark" ? "#f44747" : "#d32f2f",
+          foreground: semantic.error,
         },
       },
       {
