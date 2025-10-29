@@ -2,13 +2,15 @@
 
 ![Beach Condo Icon](./icon.png)
 
-Themes for when you'd rather be coding at the beach but don't want to get sand in your laptop.
+Themes for people who spend their whole vacation vibe coding.
 
 ## Themes
 
 _Comes in 4 costal flavors..._
 
 ### Belize City
+
+_Belize City isn't the capital, that's Belmopan. But Belmopan doesn't have beach._
 
 <table>
 <tr>
@@ -31,6 +33,8 @@ _Comes in 4 costal flavors..._
 
 ### Barcelona
 
+_Stay in the condo because you don't want sand in your laptop; end up spilling vermouth on it anyway._
+
 <table>
 <tr>
 <td width="50%">
@@ -52,6 +56,8 @@ _Comes in 4 costal flavors..._
 
 ### Bangkok
 
+_Pad See Ew > Pad Thai. Don't @ me._
+
 <table>
 <tr>
 <td width="50%">
@@ -72,6 +78,8 @@ _Comes in 4 costal flavors..._
 </table>
 
 ### Brisbane
+
+_I've never been to Australia becuase I watch nature documentaries so I know there are crazy scorpions everywhere. Nope. No way._
 
 <table>
 <tr>
